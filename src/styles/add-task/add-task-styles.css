@@ -8,7 +8,7 @@
   left: var(--layout-padding, 0);
   right: var(--layout-padding, 0);
   padding: 0 10px;
-  margin: var(--margin);
+  margin: var(--margin) 0;
 }
 
 .add-task-input {
@@ -22,7 +22,7 @@
 
 .undo-redo-buttons {
   display: flex;
-  gap: var(--padding-sm);
+  /* gap: var(--padding-sm); */
 }
 
 .action-buttons-container {
@@ -34,6 +34,11 @@
 .undo-btn,
 .redo-btn {
   padding: var(--padding-sm) var(--padding);
+  margin: 0 2px;
+}
+
+.date-selector {
+  width: 80px;
 }
 
 @media screen and (min-width: 576px) {
@@ -51,6 +56,10 @@
 @media screen and (min-width: 992px) {
   .add-task-container {
     padding: 0 180px;
+  }
+
+  .date-selector {
+    width: 100px;
   }
 }
 

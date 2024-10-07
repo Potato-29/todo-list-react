@@ -40,7 +40,11 @@ const AddTask = () => {
           Add Task
         </Button>
         <div className="undo-redo-buttons">
-          <input type="date" onChange={(e) => setDeadline(e.target.value)} />
+          <input
+            className="date-selector"
+            type="date"
+            onChange={(e) => setDeadline(e.target.value)}
+          />
           <select
             id="priority-select"
             value={priority}
