@@ -1,0 +1,13 @@
+.filter-button {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--padding-sm) var(--padding-lg);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.filter-active {
+  background-color: var(--secondary-color);
+  color: var(--text-color-secondary);
+}

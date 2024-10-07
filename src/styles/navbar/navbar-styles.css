@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.navbar-title {
+  font-size: var(--font-size-lg);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: var(--padding-sm);
+}
+
+.reset-btn {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-title {
+    font-size: var(--font-size-lg);
+    margin-top: var(--margin);
+  }
+}

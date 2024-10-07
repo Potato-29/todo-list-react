@@ -1,0 +1,14 @@
+.deadline-badge {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 var(--margin-sm);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .deadline-badge {
+    padding: 14px 20px;
+  }
+}

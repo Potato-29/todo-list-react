@@ -1,0 +1,63 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: var(--padding);
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--margin);
+}
+
+.todoItemContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.completed-text {
+  text-decoration: line-through;
+}
+
+.todoItemComplete {
+  background-color: var(--complete-bg-color);
+  border: 1px solid var(--complete-border-color);
+}
+
+.todoItemActions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: var(--border-radius-full);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: var(--margin);
+}
+
+.checkmark {
+  background-image: url("../../assets/icons/check.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+  height: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.editing-todo {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  padding: var(--padding-sm);
+}

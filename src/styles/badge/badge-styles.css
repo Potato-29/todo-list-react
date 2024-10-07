@@ -1,0 +1,22 @@
+.badge {
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.badge.low {
+  background-color: #32ca32;
+}
+.badge.medium {
+  background-color: #eff320;
+}
+.badge.high {
+  background-color: #ca3232;
+}
+
+@media screen and (min-width: 768px) {
+  .badge {
+    padding: 14px 20px;
+  }
+}

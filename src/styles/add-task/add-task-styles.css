@@ -1,0 +1,61 @@
+.add-task-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: var(--layout-padding, 0);
+  right: var(--layout-padding, 0);
+  padding: 0 10px;
+  margin: var(--margin);
+}
+
+.add-task-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  margin-bottom: var(--margin);
+}
+
+.undo-redo-buttons {
+  display: flex;
+  gap: var(--padding-sm);
+}
+
+.action-buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.undo-btn,
+.redo-btn {
+  padding: var(--padding-sm) var(--padding);
+}
+
+@media screen and (min-width: 576px) {
+  .add-task-container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .add-task-container {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .add-task-container {
+    padding: 0 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .add-task-container {
+    padding: 0 180px;
+  }
+}

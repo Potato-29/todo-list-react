@@ -1,0 +1,52 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: var(--border-radius);
+  margin: 0 var(--margin-sm);
+}
+
+.button.primary {
+  background-color: var(--info-color);
+  color: white;
+}
+
+.button.secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.button.danger {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.button.success {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.button.transparent {
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.button.black {
+  background-color: black;
+  color: white;
+}
+
+.button.transparent:hover {
+  background-color: rgb(194, 194, 194);
+  color: var(--text-color);
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button.active {
+  opacity: 0.8;
+}
