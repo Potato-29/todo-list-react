@@ -1,7 +1,7 @@
 .filter-button {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  padding: var(--padding-sm) var(--padding-lg);
+  padding: var(--padding-sm) var(--padding-sm);
   background-color: var(--background-color);
   color: var(--text-color);
   cursor: pointer;
@@ -10,4 +10,10 @@
 .filter-active {
   background-color: var(--secondary-color);
   color: var(--text-color-secondary);
+}
+
+@media screen and (min-width: 1024px) {
+  .filter-button {
+    padding: var(--padding-sm) var(--padding-lg);
+  }
 }
