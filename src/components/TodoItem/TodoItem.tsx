@@ -72,10 +72,14 @@ const TodoItem = ({ id, text, completed, priority, deadline }: Todo) => {
           </Button>
         ) : (
           <>
-            <Button variant="primary" onClick={onEdit}>
+            <Button className="edit-btn" variant="primary" onClick={onEdit}>
               <img className="icon" src={editIcon} alt="Edit" />
             </Button>
-            <Button variant="danger" onClick={() => deleteTodo(dispatch, id)}>
+            <Button
+              className="delete-btn"
+              variant="danger"
+              onClick={() => deleteTodo(dispatch, id)}
+            >
               <img className="icon" src={deleteIcon} alt="Delete" />
             </Button>
           </>

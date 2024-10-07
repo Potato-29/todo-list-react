@@ -9,6 +9,11 @@
   margin-bottom: var(--margin);
 }
 
+.delete-btn,
+.edit-btn {
+  padding: 6px 8px;
+}
+
 .todoItemContent {
   display: flex;
   flex-direction: row;
@@ -60,4 +65,11 @@
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-sm);
   padding: var(--padding-sm);
+}
+
+@media screen and (min-width: 1024px) {
+  .delete-btn,
+  .edit-btn {
+    padding: var(--padding);
+  }
 }
