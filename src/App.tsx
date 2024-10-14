@@ -25,7 +25,7 @@ function App() {
     <div className="layout">
       <Navbar />
       <div className="todos-container">
-        {filteredTodos.map((todo) => (
+        {filteredTodos?.map((todo) => (
           <TodoItem key={todo.id} {...todo} />
         ))}
       </div>
