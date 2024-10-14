@@ -7,7 +7,7 @@ import { Priority } from "./types/Todo";
 
 function App() {
   const { todos, filter, priority, search } = useTodosContext();
-  const filteredTodos = todos.filter((todo) => {
+  const filteredTodos = todos?.filter((todo) => {
     const filterMatch =
       filter === "ALL" ||
       (filter === "COMPLETE" && todo.completed) ||
